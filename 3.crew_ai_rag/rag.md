@@ -35,6 +35,51 @@ CrewAI is a multi-agent orchestration framework where autonomous agents can coll
     D --> E[Final Output]
 
 
+
+## RAG Tool
+
+The RagTool is a dynamic knowledge base tool for answering questions using Retrieval-Augmented Generation.
+
+
+Description
+The RagTool is designed to answer questions by leveraging the power of Retrieval-Augmented Generation (RAG) through EmbedChain. It provides a dynamic knowledge base that can be queried to retrieve relevant information from various data sources. This tool is particularly useful for applications that require access to a vast array of information and need to provide contextually relevant answers.
+
+The RagTool can be used with a wide variety of data sources, including:
+
+📰 PDF files
+📊 CSV files
+📃 JSON files
+📝 Text
+📁 Directories/Folders
+🌐 HTML Web pages
+📽️ YouTube Channels
+📺 YouTube Videos
+📚 Documentation websites
+📝 MDX files
+📄 DOCX files
+🧾 XML files
+📬 Gmail
+📝 GitHub repositories
+🐘 PostgreSQL databases
+🐬 MySQL databases
+🤖 Slack conversations
+💬 Discord messages
+🗨️ Discourse forums
+📝 Substack newsletters
+🐝 Beehiiv content
+💾 Dropbox files
+🖼️ Images
+⚙️ Custom data sources
+​
+
+Parameters
+- The RagTool accepts the following parameters:
+
+- summarize: Optional. Whether to summarize the retrieved content. Default is False.
+- adapter: Optional. A custom adapter for the knowledge base. If not provided, an EmbedchainAdapter will be used.
+- config: Optional. Configuration for the underlying EmbedChain App.
+
+
 ### ✅ Why use CrewAI for RAG?
 - Modular Design: Each stage (retrieve, verify, generate) is handled by a specialized agent.
 - Tool Integration: Easily plug in APIs, vector stores, or custom functions as tools.
@@ -48,4 +93,6 @@ CrewAI is a multi-agent orchestration framework where autonomous agents can coll
 - Scientific question answering using academic papers
 - Customer support using internal knowledge bases
 - Financial report generation with real-time data
+
+
 
